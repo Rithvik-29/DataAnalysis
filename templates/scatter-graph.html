@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+        Bar Graph
+        </title>
+      <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+      </style>
+    </head>
+    <body>
+        <p style="text-align:center"><b>Scatter Graph</b></p>
+
+        <img src={{ scatter_url }} alt="Chart" height="400" width="650" class="center">
+
+        <button onclick="window.location.href='{{ url_for('home') }}'" class="center">Back</button>
+    </body>
+</html>
