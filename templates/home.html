@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+        body {
+         border:rgba(244, 247, 242, 0.893)
+       }
+          h1 {
+         background-color: rgba(0,0,0, 0.893);
+         border-style: ridge;
+         padding: 30px;
+         text-align: center;
+       }
+    
+      .btn-group button {
+         background-color: black;
+         border: 1px solid white;
+         color: white; 
+         padding: 10px 24px;
+         cursor: pointer;
+         float: left;
+      }
+
+
+      .btn-group:after {
+         content: "";
+         clear: both;
+         display: table;
+      }
+
+      .btn-group button:not(:last-child) {
+         border-right: none; 
+      }
+
+      .btn-group button:hover {
+         background-color: #775f1d;
+        
+      }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <title>HIV Patients Data Analysis</title>
+  <link rel="stylesheet" href="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head> 
+
+<body style="background-color: rgb(219, 119, 31);">
+  <h1 style="color:rgba(219, 119, 31, 0.893)">HIV Patients Data Analysis</h1>
+<!--maybe can add desc here-->
+      <div class="btn-group" style="width:100%">
+         <button  style="width:33.33%" onclick="window.location.href='{{ url_for('bargraph_input') }}'">Bar Graph</button>
+         <button onclick="window.location.href='{{ url_for('scattergraph') }}'" style="width:33.33%">Scatter Graph</button>
+         <button onclick="window.location.href=''" style="width:33.33%">Sorting</button>
+      </div>
+  
+<b><h2><p style="text-align:center;">About Us:</p></h2></b>
+  
+  <h4> We are a team of coders who have a fascination with HIV since the disease is such an issue worldwide. We believe that HIV data should be made more accessible to users with a lack of computer knowledge. Therefore, we made a beautiful inteface which is used to draw graphs based on two variables to showcase the correlation a certain variable and the rate of HIV. </h4> 
+  <br>
+<b><h2><p style="text-align:center;">Our Aim:</p></h2></b>
+
+<h4>Our group aims to create a platform which allows user to get access complicated information about HIV and see the relationship between any two variables. Some of these variables include each of the countries, the number of people diagnosed with HIV, and the people recieving ART (antiretroviral therapy). Through analysis of this data, we hope to make the data more user-friendly and easier for others to access and understand.</h4>
+
+
+<!--https://www.kaggle.com/datasets/imdevskp/hiv-aids-dataset?resource=download-->
+</body>
+
+</html>
